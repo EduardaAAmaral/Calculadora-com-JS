@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="th.jpg">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div class="corpo-da-calculadora">
+        <p id="resultado" class="tela-da-calculadora"></p>
+        <div class="zero-linha">
+            <button onclick="Apagar_Todo()" class="apagar">AC</button>
+            <button onclick="Apagar()" class="simbulos"><</button>
+            <button onclick="Inseri('/')" class="simbulos">÷</button>
+            
+        </div>
+        
+        <div class="primeira-linha">
+            <button onclick="Inseri('7')" class="botao-num">7</button>
+            <button onclick="Inseri('8')" class="botao-num">8</button>
+            <button onclick="Inseri('9')" class="botao-num">9</button>
+            <button onclick="Inseri('*')" class="simbulos">x</button>
+        </div>
+        <div class="segunda-linha">
+            <button onclick="Inseri('4')" class="botao-num">4</button>
+            <button onclick="Inseri('5')" class="botao-num">5</button>
+            <button onclick="Inseri('6')" class="botao-num">6</button>
+            <button onclick="Inseri('-')" class="mais">-</button>
+        </div>
+        <div class="terceira-linha">
+            <button onclick="Inseri('1')" class="botao-num">1</button>
+            <button onclick="Inseri('2')" class="botao-num">2</button>
+            <button onclick="Inseri('3')" class="botao-num">3</button>
+            <button id="mais" onclick="Inseri('+')" class="mais">+</button>
+        </div>
+        <div class="quarta-linha">
+            <button onclick="Inseri('0')" class="botao-num">0</button>
+            <button onclick="Calcular()" class="igual">=</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
